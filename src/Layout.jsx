@@ -41,13 +41,16 @@ export default function Layout() {
     }, []);
 
     return (<>
-        {/* <nav className={`custom-navbar ${isSticky ? 'affix' : 'affix-top'}`} > */}
-        <nav className={`custom-navbar ${isActiveURL('/') ? 'affix-top' : 'affix'}`} >
+        <nav className={`custom-navbar ${isSticky ? 'affix' : 'affix-top'}`} >
+            {/* <nav className={`custom-navbar ${isActiveURL('/') ? 'affix-top' : 'affix'}`} > */}
             <Container>
                 <Link className="logo" to="/">DS Portfolio</Link>
                 <ul className={`nav ${isActive ? 'show' : ''}`}>
                     <li className="item">
                         <Link className="link" to="/"> Home</Link>
+                    </li>
+                    <li className="item">
+                        <Link className="link" to="/about"> About</Link>
                     </li>
                     <li className="item">
                         <Link className="link" to="/education"> Education</Link>
@@ -57,9 +60,6 @@ export default function Layout() {
                     </li>
                     <li className="item">
                         <Link className="link" to="/services"> Services</Link>
-                    </li>
-                    <li className="item">
-                        <Link className="link" to="/about"> About Me</Link>
                     </li>
                     <li className="item ml-md-3">
                         <Link className="btn btn-primary" to="/contact"> Contact</Link>

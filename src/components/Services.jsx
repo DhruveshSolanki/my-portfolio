@@ -10,7 +10,7 @@ import toolbox from "../assets/images/toolbox.svg"
 =========================================================
 */
 
-export default function Home() {
+export default function Services() {
     return (<>
         <section className="section" id="service">
             <Container className="text-center pt-5">

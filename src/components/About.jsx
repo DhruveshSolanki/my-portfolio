@@ -1,5 +1,6 @@
 import Container from "react-bootstrap/esm/Container";
 import man_img from "../assets/images/dhruvesh.jpg"
+import resume from '../assets/files/DhruveshSolanki-Resume(Canada).pdf';
 
 /*
 =========================================================
@@ -12,7 +13,7 @@ import man_img from "../assets/images/dhruvesh.jpg"
 export default function About() {
     const downloadResume = () => {
         const link = document.createElement('a');
-        link.href = '../assets/file/DhruveshSolanki-Resume(Canada).pdf';
+        link.href = resume;
         link.download = 'DhruveshSolanki-Resume(Canada).pdf';
         link.click();
     };
